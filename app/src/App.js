@@ -17,7 +17,7 @@ function App() {
   const handleSubmit = async () => {
     setLoading(true);
     setResponse(null);
-    setCountdown(8);
+    setCountdown(10);
     try {
       const res = await axios.post('https://tobaccocare.onrender.com/ask_question', { question: question });
       setResponse(res.data.answer);
