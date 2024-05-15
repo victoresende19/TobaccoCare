@@ -17,7 +17,7 @@ function App() {
     setLoading(true);
     setResponse(null);
     try {
-      const res = await axios.post('https://medicalrag.onrender.com/ask_question', { question: question });
+      const res = await axios.post('https://tobaccocare.onrender.com/ask_question', { question: question });
       setResponse(res.data.answer);
     } catch (error) {
       setResponse('Erro ao obter resposta. Tente novamente.');
@@ -29,10 +29,10 @@ function App() {
     <div className="container">
       <div style={{ position: 'relative', width: '100%' }}>
         <img src={logo} alt="Logo" />
-        <div className="title-overlay">TabaccoCare</div>
+        <div className="title-overlay">TobaccoCare</div>
       </div>
       <div className="description-text">
-        O assistente TabaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo INCA (Instituto Nacional de Câncer).
+        O assistente TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo INCA (Instituto Nacional de Câncer).
       </div>
       <p>Por favor, insira sua pergunta abaixo:</p>
       <input
