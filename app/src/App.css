@@ -5,6 +5,10 @@ body {
   font-family: 'Public Sans'; 
 }
 
+a { 
+  color: white; 
+}
+
 .container {
   display: flex;
   flex-direction: column;
