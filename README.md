@@ -8,7 +8,7 @@ Dessa forma, a API foca em simplificar o acesso às informações contidas no "P
 
 ## Acesse 
 
-Para facilitar o teste do MedicalChat, foi desenvolvido um website que realiza consultas à API criada. O deploy da API foi realizado utilizando a plataforma [Render](https://render.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Para acessar e testar o aplicativo, visite: https://tabagismo-app.vercel.app/.
+Para facilitar o teste do MedicalChat, foi desenvolvido um website que realiza consultas à API criada. O deploy da API foi realizado utilizando a plataforma [Render](https://render.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Para acessar e testar o aplicativo, visite: [https://tabagismo-app.vercel.app/](https://tobacco-care.vercel.app/).
 
 <hr>
 
