@@ -2,7 +2,7 @@
 
 <hr>
 
-A API TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo INCA (Instituto Nacional de Câncer), do qual pode ser acessado [clicando aqui](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). 
+A plataforma TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo INCA (Instituto Nacional de Câncer), do qual pode ser acessado [clicando aqui](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). 
 
 Dessa forma, a API foca em simplificar o acesso às informações contidas no "Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo". Por fim, a API foi criada através da biblioteca FastAPI e LangChain Community, em linguagem Python, e é necessário obter uma API_KEY da OpenAI, a qual você pode criar gratuitamente, basta [clicar aqui](https://openai.com/index/openai-api/).
 
