@@ -45,7 +45,7 @@ function App() {
         <div className="title-overlay">TobaccoCare</div>
       </div>
       <div className="description-text">
-        O assistente TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo <a href="https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf">INCA (Instituto Nacional de Câncer)</a>.
+        O assistente TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo <a href="https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf" target="_blank">INCA (Instituto Nacional de Câncer)</a>.
       </div>
       <p>Por favor, insira sua pergunta abaixo:</p>
       <input
