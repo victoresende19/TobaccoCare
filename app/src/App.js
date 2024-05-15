@@ -8,7 +8,7 @@ function App() {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [countdown, setCountdown] = useState(10);
+  const [countdown, setCountdown] = useState(15);
 
   const handleInputChange = (event) => {
     setQuestion(event.target.value);
@@ -17,7 +17,7 @@ function App() {
   const handleSubmit = async () => {
     setLoading(true);
     setResponse(null);
-    setCountdown(10);
+    setCountdown(15);
     try {
       const res = await axios.post('https://tobaccocare.onrender.com/ask_question', { question: question });
       setResponse(res.data.answer);
