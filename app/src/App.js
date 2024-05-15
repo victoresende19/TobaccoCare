@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { CircularProgress } from '@mui/material';
 import logo from './tabagismo.jpg';
@@ -8,6 +8,7 @@ function App() {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [countdown, setCountdown] = useState(8);
 
   const handleInputChange = (event) => {
     setQuestion(event.target.value);
@@ -16,6 +17,7 @@ function App() {
   const handleSubmit = async () => {
     setLoading(true);
     setResponse(null);
+    setCountdown(8);
     try {
       const res = await axios.post('https://tobaccocare.onrender.com/ask_question', { question: question });
       setResponse(res.data.answer);
@@ -24,6 +26,17 @@ function App() {
     }
     setLoading(false);
   };
+
+  useEffect(() => {
+    let timer;
+    if (loading && countdown > 0) {
+      timer = setInterval(() => {
+        setCountdown((prevCountdown) => prevCountdown - 1);
+      }, 1000);
+    }
+
+    return () => clearInterval(timer);
+  }, [loading, countdown]);
 
   return (
     <div className="container">
@@ -44,9 +57,17 @@ function App() {
       <button onClick={handleSubmit}>
         Enviar
       </button>
-      {loading ? <><div>Isso pode levar cerca de 8 segundos... <br></br></div><CircularProgress color="inherit" /></> :
-        <><div className="response">{response || "Sua resposta aparecerá aqui..."}</div><br></br><br></br></>
-      }
+      {loading ? (
+        <>
+          <div>Isso pode levar cerca de {countdown} segundos...</div>
+          <CircularProgress color="inherit" />
+        </>
+      ) : (
+        <>
+          <div className="response">{response || "Sua resposta aparecerá aqui..."}</div>
+          <br /><br />
+        </>
+      )}
     </div>
   );
 }
