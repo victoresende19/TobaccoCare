@@ -8,7 +8,7 @@ function App() {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [countdown, setCountdown] = useState(8);
+  const [countdown, setCountdown] = useState(10);
 
   const handleInputChange = (event) => {
     setQuestion(event.target.value);
