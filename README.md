@@ -4,11 +4,11 @@
 
 A plataforma TobaccoCare tem como objetivo fornecer uma aplicação que utilize a técnica de Retrieval Augmented Generation (RAG) para responder a perguntas específicas de médicos sobre o protocolo de tratamento do tabagismo, com base no documento disponibilizado pelo INCA (Instituto Nacional de Câncer), do qual pode ser acessado [clicando aqui](https://www.inca.gov.br/sites/ufu.sti.inca.local/files//media/document//protocolo-clinico-e-diretrizes-terapeuticas-do-tabagismo.pdf). 
 
-Dessa forma, a API foca em simplificar o acesso às informações contidas no "Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo". Por fim, a API foi criada através da biblioteca FastAPI e LangChain Community, em linguagem Python, e é necessário obter uma API_KEY da OpenAI, a qual você pode criar gratuitamente, basta [clicar aqui](https://openai.com/index/openai-api/).
-
 ## Acesse 
 
-Para facilitar o teste do MedicalChat, foi desenvolvido um website que realiza consultas à API criada. O deploy da API foi realizado utilizando a plataforma [Google Cloud](https://cloud.google.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Para acessar e testar o aplicativo, visite: [https://tabagismo-app.vercel.app/](https://tobacco-care.vercel.app/).
+Para facilitar o teste do MedicalChat, foi desenvolvido um website que realiza consultas à API criada. Dessa forma, a API foca em simplificar o acesso às informações contidas no "Protocolo Clínico e Diretrizes Terapêuticas do Tabagismo". A API foi criada através das bibliotecas FastAPI, FAISS (Meta), OpenAI e LangChain Community, em linguagem Python, e é necessário obter uma API_KEY da OpenAI, a qual você pode criar gratuitamente, basta [clicar aqui](https://openai.com/index/openai-api/). Além disso, visando a acessibilidade, criou-se a plataforma TobaccoCare por meio do framework React, em linguagem JavaScript. 
+
+O deploy da API foi realizado utilizando o [Google Cloud](https://cloud.google.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Por fim, o frontend da plataforma teve o deploy através do (Vercel)[https://vercel.com/]. Para acessar e testar o aplicativo, visite: [https://tabagismo-app.vercel.app/](https://tobacco-care.vercel.app/).
 
 <hr>
 
@@ -71,6 +71,12 @@ O sistema segue o fluxo operacional detalhado abaixo, cujo diagrama arquitetural
     Não diga “de acordo com o contexto” ou “mencionado no contexto” ou similar.
 - Responde a pergunta por meio do contexto fornecido (PDF) e prompt, utilizando o modelo OpenAI (gpt-3.5-turbo-0125).
 
+<hr>
+
+## Esquematização plataforma TobaccoCare
+![Untitled (1)](https://github.com/victoresende19/TobaccoCare/assets/63743020/e5add826-0cda-4079-9c38-f2f6cb9307e3)
+
+## Esquematização LLM com RAG (API)
 ![Untitled](https://github.com/victoresende19/TabagismoRAG/assets/63743020/eb4cb83e-b179-4c07-bc93-c806262ad579)
 
 
