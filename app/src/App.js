@@ -8,7 +8,7 @@ function App() {
   const [question, setQuestion] = useState('');
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [countdown, setCountdown] = useState(15);
+  const [countdown, setCountdown] = useState(20);
 
   const handleInputChange = (event) => {
     setQuestion(event.target.value);
@@ -17,9 +17,9 @@ function App() {
   const handleSubmit = async () => {
     setLoading(true);
     setResponse(null);
-    setCountdown(15);
+    setCountdown(20);
     try {
-      const res = await axios.post('https://tobaccocare.onrender.com/ask_question', { question: question });
+      const res = await axios.post('https://tobaccocare.rj.r.appspot.com/ask_question', { question: question });
       setResponse(res.data.answer);
     } catch (error) {
       setResponse('Erro ao obter resposta. Tente novamente.');
