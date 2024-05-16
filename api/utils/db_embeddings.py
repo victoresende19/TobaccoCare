@@ -42,4 +42,4 @@ def query_vector_db(pages: list, query: str, openai_api_key: str, vector_store_p
     chunks = text_splitter.split_documents(pages)
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db_faiss = FAISS.load_local(vector_store_path, embeddings, allow_dangerous_deserialization=True)
-    return db_faiss.similarity_search_with_score(query, k=5)
+    return db_faiss.similarity_search_with_score(query, k=3)
