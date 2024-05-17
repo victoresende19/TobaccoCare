@@ -6,9 +6,9 @@ A plataforma TobaccoCare tem como objetivo fornecer uma aplicação que utilize 
 
 ## Acesse 
 
-Para facilitar o teste do MedicalChat, foi desenvolvido um website que realiza consultas à API criada. A API foi criada através das bibliotecas FastAPI, FAISS (Meta), OpenAI e LangChain Community, em linguagem Python, e é necessário obter uma API_KEY da OpenAI, a qual você pode criar gratuitamente, basta [clicar aqui](https://openai.com/index/openai-api/). Além disso, visando a acessibilidade, criou-se a plataforma TobaccoCare por meio do framework React, em linguagem JavaScript. 
+Para facilitar o teste do TobaccoCare, foi desenvolvido um website que realiza consultas à API criada. A API foi criada através das bibliotecas FastAPI, FAISS (Meta), OpenAI e LangChain Community, em linguagem Python, e é necessário obter uma API_KEY da OpenAI, a qual você pode criar gratuitamente, basta [clicar aqui](https://openai.com/index/openai-api/). Além disso, visando a acessibilidade, criou-se a plataforma TobaccoCare por meio do framework React, em linguagem JavaScript. 
 
-O deploy da API foi realizado utilizando o [Google Cloud](https://cloud.google.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Por fim, o frontend da plataforma teve o deploy através do (Vercel)[https://vercel.com/]. Para acessar e testar o aplicativo, visite: [https://tabagismo-app.vercel.app/](https://tobacco-care.vercel.app/).
+O deploy da API foi realizado utilizando o [Google Cloud](https://cloud.google.com/), sob o plano gratuito. Devido às limitações deste plano, como o uso de máquinas menos robustas, o tempo de resposta pode ser maior em comparação ao uso local da API. Por fim, o frontend da plataforma teve o deploy através do [Vercel](https://vercel.com/). Para acessar e testar o aplicativo, visite: [https://tabagismo-app.vercel.app/](https://tobacco-care.vercel.app/).
 
 <hr>
 
