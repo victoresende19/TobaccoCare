@@ -75,7 +75,8 @@ O sistema segue o fluxo operacional detalhado abaixo, cujo diagrama arquitetural
 <hr>
 
 ## Esquematização plataforma TobaccoCare
-![Untitled (1)](https://github.com/victoresende19/TobaccoCare/assets/63743020/e5add826-0cda-4079-9c38-f2f6cb9307e3)
+![Untitled (2)](https://github.com/victoresende19/TobaccoCare/assets/63743020/eab77bf4-ec64-40b5-bf2b-4e8e11f76960)
+
 
 ## Esquematização LLM com RAG (API)
 ![Untitled](https://github.com/victoresende19/TabagismoRAG/assets/63743020/eb4cb83e-b179-4c07-bc93-c806262ad579)
